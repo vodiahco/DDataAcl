@@ -26,7 +26,7 @@ The requirements of this module is listed in composer.json.
 ## Usage 
 Simply configure the acl key in the configuration, add the roles and resources and the DDataACL will automatically build the ACL tree.
 
-Please note that access to a resource is denied for a role, a deny event is fired. By default, this event is handled in the DDataACL::onDeny method. This method receives the Zend\Mvc\MvcEvent
+Please note that when access to a resource is denied by DDAtaACL, a deny event is fired. By default, this event is handled in the DDataACL::onDeny method. This method receives the Zend\Mvc\MvcEvent
 as part of the params. You can then implement custom redirect in the DDataACL::onDeny method.
 
 
